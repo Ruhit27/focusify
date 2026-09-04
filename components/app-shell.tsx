@@ -18,7 +18,7 @@ function SidebarLink({ href, label, Icon }: { href: string; label: string; Icon:
       className={isActive ? activeClasses : baseClasses}
       style={{ transition: "all .15s" }}
     >
-      <Icon h-4 w-4 />
+      <Icon />
       <span>{label}</span>
     </Link>
   );
@@ -62,21 +62,21 @@ export default function AppShell({
             className={pathname === "/dashboard" ? "flex-1 rounded bg-primary/20 text-primary" : "flex-1 rounded text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"}
             style={{ transition: "all .15s" }}
           >
-            <Home className="h-4 w-4" />
+            <Home />
           </Link>
           <Link
             href="/projects"
             className={pathname === "/projects" ? "flex-1 rounded bg-primary/20 text-primary" : "flex-1 rounded text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"}
             style={{ transition: "all .15s" }}
           >
-            <Folder className="h-4 w-4" />
+            <Folder />
           </Link>
           <Link
             href="/focus"
             className={pathname === "/focus" ? "flex-1 rounded bg-primary/20 text-primary" : "flex-1 rounded text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"}
             style={{ transition: "all .15s" }}
           >
-            <Lightbulb className="h-4 w-4" />
+            <Lightbulb />
           </Link>
         </div>
       </div>
